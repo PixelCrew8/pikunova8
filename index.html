@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ぴくノヴァ</title>
 
 <style>
@@ -13,13 +15,15 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    min-height:100vh;
+    padding:20px;
 }
 
 .card{
-    width:340px;
+    width:100%;
+    max-width:360px;
     background:#1c1c1c;
-    padding:30px;
+    padding:25px;
     border-radius:20px;
     text-align:center;
     box-shadow:0 0 25px rgba(255,255,255,0.1);
@@ -39,18 +43,23 @@ a{
     text-decoration:none;
     color:white;
     background:#000;
-    padding:14px;
+    padding:16px;
     margin:12px 0;
     border-radius:12px;
     transition:0.2s;
     border:1px solid <#1497186336610975856>33;
     font-weight:bold;
+    font-size:16px;
 }
 
 a:hover{
     background:white;
     color:black;
     transform:scale(1.03);
+}
+
+a:active{
+    transform:scale(0.97);
 }
 </style>
 
