@@ -9,7 +9,7 @@
 <style>
 body{
     margin:0;
-    background:linear-gradient(135deg,#000,#111);
+    background:linear-gradient(135deg,#000,#0a0a0a);
     color:white;
     font-family:sans-serif;
     display:flex;
@@ -22,11 +22,12 @@ body{
 .card{
     width:100%;
     max-width:420px;
-    background:#1c1c1c;
+    background:#141414;
     padding:30px;
-    border-radius:20px;
+    border-radius:22px;
     text-align:center;
-    box-shadow:0 0 25px rgba(255,255,255,0.1);
+    box-shadow:0 0 30px rgba(0,0,0,0.8);
+    border:1px solid #222;
 }
 
 h1{
@@ -39,7 +40,7 @@ p{
     margin-bottom:25px;
 }
 
-/* 共通ボタン */
+/* 共通ボタン（統一ベース） */
 a{
     display:block;
     text-decoration:none;
@@ -48,46 +49,53 @@ a{
     border-radius:14px;
     font-weight:bold;
     font-size:18px;
-    transition:0.2s;
+    transition:0.25s;
+    color:white;
+    position:relative;
+    overflow:hidden;
 }
 
-/* TikTok：黒＋白＋赤＋水色 */
-
+/* TikTok（黒＋ネオン青＋ピンク） */
+.tiktok{
+    background:#000;
+    border:1px solid #25F4EE;
+    box-shadow:0 0 10px rgba(37,244,238,0.2);
+}
 .tiktok::before{
     content:"●";
     color:#ff0050;
-    margin-right:6px;
+    margin-right:8px;
 }
 
-/* X：白黒 */
+/* X（モノクロ＋微光） */
 .x{
-    background:#000;
-    color:white;
+    background:#0a0a0a;
     border:1px solid #fff;
+    box-shadow:0 0 8px rgba(255,255,255,0.1);
 }
 
-/* Instagram：赤・黄・紫グラデ */
+/* Instagram（グラデ強化） */
 .instagram{
     background:linear-gradient(45deg,#f58529,#feda77,#dd2a7b,#8134af);
-    color:white;
     border:none;
+    box-shadow:0 0 12px rgba(221,42,123,0.3);
 }
 
-/* YouTube：赤白 */
+/* YouTube（赤＋光） */
 .youtube{
     background:#ff0000;
-    color:white;
     border:1px solid #fff;
+    box-shadow:0 0 10px rgba(255,0,0,0.3);
 }
 
-/* ホバー */
+/* ホバー統一 */
 a:hover{
-    transform:scale(1.03);
-    filter:brightness(1.1);
+    transform:scale(1.04);
+    filter:brightness(1.15);
 }
 
 a:active{
-    transform:scale(0.96);
+    transform:scale(0.97);
 }
 </style>
 
