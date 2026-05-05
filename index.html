@@ -39,23 +39,56 @@ p{
     margin-bottom:25px;
 }
 
+/* 共通ボタン */
 a{
     display:block;
     text-decoration:none;
-    color:white;
-    background:#000;
     padding:18px;
     margin:14px 0;
     border-radius:14px;
-    border:1px solid <#1497186336610975856>33;
     font-weight:bold;
     font-size:18px;
+    transition:0.2s;
 }
 
+/* TikTok：黒＋白＋赤＋水色 */
+.tiktok{
+    background:#000;
+    color:white;
+    border:1px solid #25F4EE;
+    position:relative;
+}
+.tiktok::before{
+    content:"●";
+    color:#ff0050;
+    margin-right:6px;
+}
+
+/* X：白黒 */
+.x{
+    background:#000;
+    color:white;
+    border:1px solid #fff;
+}
+
+/* Instagram：赤・黄・紫グラデ */
+.instagram{
+    background:linear-gradient(45deg,#f58529,#feda77,#dd2a7b,#8134af);
+    color:white;
+    border:none;
+}
+
+/* YouTube：赤白 */
+.youtube{
+    background:#ff0000;
+    color:white;
+    border:1px solid #fff;
+}
+
+/* ホバー */
 a:hover{
-    background:white;
-    color:black;
     transform:scale(1.03);
+    filter:brightness(1.1);
 }
 
 a:active{
@@ -73,13 +106,13 @@ a:active{
 
 <p>ぴくノヴァの公式サイト</p>
 
-<a href="https://www.tiktok.com/@pixelcrew8?_r=1&_t=ZS-9670el96nS8">TikTok</a>
+<a class="tiktok" href="https://www.tiktok.com/@pixelcrew8?_r=1&_t=ZS-9670el96nS8">TikTok</a>
 
-<a href="https://x.com/pixelcrew8?s=21">X</a>
+<a class="x" href="https://x.com/pixelcrew8?s=21">X</a>
 
-<a href="https://www.instagram.com/pikuno8?igsh=MTd2c2prdXRiZjZlZQ%3D%3D&utm_source=qr">Instagram</a>
+<a class="instagram" href="https://www.instagram.com/pikuno8?igsh=MTd2c2prdXRiZjZlZQ%3D%3D&utm_source=qr">Instagram</a>
 
-<a href="https://www.youtube.com/@%E3%83%94%E3%82%AF%E3%83%8E%E3%83%B4%E3%82%A1">YouTube</a>
+<a class="youtube" href="https://www.youtube.com/@%E3%83%94%E3%82%AF%E3%83%8E%E3%83%B4%E3%82%A1">YouTube</a>
 
 </div>
 
